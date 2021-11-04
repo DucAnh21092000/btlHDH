@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Link CSS  -->
+  <link rel="stylesheet" href="../css/style.css" class="">
+</head>
+
+<body>
+
+  <!-- 
+      ====================================
+      Header start
+      ====================================
+  -->
+  <div class="header container mt-2">
+    <h1 class="header-content text- center ">Bài tập lớn môn hệ điều hành nhóm 2</h1>
+    <h4 class="text-center">Đề tài: Lập lịch cho CPU </h4>
+  </div>
+
+  <!-- 
+      ====================================
+      Header end
+      ====================================
+  -->
+
+  <!-- 
+      ====================================
+      create thread start
+      ====================================
+  -->
+
+  <div class="main mt-5 container d-flex align-items-center  w-100">
+    <div class="d-flex w-50 justify-content-between">
+      <label class="">Nhập số lượng tiến trình </label>
+      <input type="text" class="number__thread">
+      <button type="button" name="" id="" class="btn btn-primary btn__submit" role="button">Xác nhận</button>
+    </div>
+  </div>
+
+  <!-- 
+      ====================================
+      create thread end
+      ====================================
+  -->
+
+
+  <!-- 
+      ====================================
+      table thread start
+       ====================================
+  -->
+
+  <div class="container  d-flex justify-content-center mt-5">
+    <table
+      class="table text-center w-100 table-striped table-bordered table-inverse d-none table-responsive table__thread">
+      <thead class="thead-inverse table__thead text-center">
+        <tr class="">
+          <th colspan="3" class="">Nhập dữ liệu từng luồng </th>
+        </tr>
+        <tr>
+          <th class="table__header">Tên luồng</th>
+          <th class="table__header">Thời gian đến </th>
+          <th class="table__header">Thời gian thực thi</th>
+        </tr>
+      </thead>
+      <tbody class="table__body">
+
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 
+      ====================================
+      table thread end
+      ====================================
+  -->
+
+  <!-- 
+      ====================================
+      Đồng hồ start
+       ====================================
+  -->
+
+  <div class="clock__body d-none text-center container mt-5 mb-5">
+    <h1 class="text-center">Kết quả</h1>
+    <div class="d-flex justify-content-center  align-items-center flex-row pt-3">
+      <div class="d-flex align-items-center justify-content-center w-100 ">
+        <p>Thời gian: </p>
+        <p class="clock text-danger">1</p>
+      </div>
+   
+    </div>
+  </div>
+
+  <!-- 
+      ====================================
+      Đồng hồ end
+       ====================================
+  -->
+
+  <!-- 
+      ====================================
+      Kết quả start
+       ====================================
+  -->
+  <div class="container  d-flex justify-content-center mt-5">
+    <table class="table d-none response text-center w-100 table-striped table-bordered table-inverse  table-responsive table__result">
+      <thead class="thead-inverse table__thead text-center">
+        <tr class="">
+          <th colspan="7" class="">Kêt quả thu được</th>
+        </tr>
+        <tr class="">
+          <th colspan="7" class="">
+            <div class="d-flex justify-content-around">
+              <div class="">
+                <p class="wait__demo" style="width:50px"></p> Thời gian chờ
+              </div>
+              <div class="">
+                <p class="access__demo" style="width:50px"></p> Thời gian thực thi
+              </div>
+            </div>
+          
+          </th>
+        </tr>
+        <tr>
+          <th class="table__header-result">Tên luồng</th>
+          <th class="table__header-result">10s </th>
+          <th class="table__header-result">20s</th>
+          <th class="table__header-result">30s </th>
+          <th class="table__header-result">40s</th>
+          <th class="table__header-result">50s </th>
+          <th class="table__header-result">60s</th>
+        </tr>
+      </thead>
+      <tbody class="table__body-result">
+        
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 
+      ====================================
+      kết quả end
+       ====================================
+  -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/clock.js"></script>
+
+</body>
+
+</html>

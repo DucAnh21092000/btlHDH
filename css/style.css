@@ -1,0 +1,45 @@
+/* 
+  =================================== INFO==================================
+  Họ  và tên: Đinh Đức Anh
+  MSSV: 20182330
+  Dự án: Lập lịch cho CPU
+  Ngày khởi tạo: 3/11/2021
+  Ngôn ngữ sử dụng: HTML,CSS,JavaScript
+  
+  ==========================================================================
+*/
+
+
+.table__header{
+    width: 33.33% !important;
+    padding: 10px 30px !important;   
+}
+.table__header-result{
+    width: calc(100%/7);
+}
+
+.table__thead,.table__body,.table__body-result{
+    width: 100%;
+    display: inline-table;
+}
+.body__result{
+    width: calc(100%/7);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.thread__name,.time__start,.time__access{
+    width: calc(100%/3);
+}
+.process,.access__demo{
+    float: left;
+    border-radius: 10px;
+    height: 20px;
+    background: chocolate;
+ 
+}
+.wait,.wait__demo{
+float: left;
+    border-radius: 10px;
+    height: 20px;
+    background:cornflowerblue;
+}
